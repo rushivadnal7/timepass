@@ -1,0 +1,176 @@
+@keyframes heartscaling {
+    from {
+        transform: scale(12);
+    }
+
+    to {
+        transform: scale(1);
+    }
+
+}
+
+@keyframes left_heart_sliders {
+    from {
+        transform: translateX(-300px);
+    }
+
+    to {
+        transform: translateX(1600px);
+    }
+}
+
+@keyframes right_heart_sliders {
+    from {
+        right: -300px;
+    }
+
+    to {
+        right: 1400px;
+    }
+}
+
+@keyframes bounceGrp1 {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+
+    to {
+        transform: translate3d(0, 200px, 0);
+    }
+}
+
+@keyframes bounceGrp2 {
+    from {
+        transform: translate3d(0, 200px, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.page-1 {
+    background-color: #f3e5f5;
+}
+
+.page-2 {
+    background-color: #e0f2f1;
+}
+
+.page-2 p {
+    background-color: #fffde7;
+}
+
+.page-3 {
+    background-color: #e0f7fa;
+}
+
+.wrapper {
+    border: 1.5px solid #e5bc52;
+    border-radius: 4px;
+}
+
+.left-cover {
+    background: #fffde7;
+    transition: transform 1.5s;
+    transform-origin: left;
+    border-right: 1px solid #e5bc52;
+}
+
+.right-cover {
+
+    transition: transform 1.5s;
+    transform-origin: right;
+    background: #fffde7;
+    border-left: 1px solid #e5bc52;
+}
+
+.wrapper:hover .left-cover {
+    transform: rotateY(-140deg);
+}
+
+.wrapper:hover .right-cover {
+    transform: rotateY(-140deg);
+}
+
+.center-heart {
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: heartscaling 2s ease-in 0.2s forwards;
+}
+
+.left-hearts {
+    left: -300px;
+    animation: left_heart_sliders 6s ease-in-out 2.2s 2 alternate forwards;
+}
+
+.right-hearts {
+    right: -300px;
+    animation: right_heart_sliders 6s ease-in-out 2.2s 2 alternate forwards;
+}
+
+.bounceGrp1 {
+    animation: bounceGrp1 1s ease-in-out 0.2s infinite alternate;
+}
+
+.bounceGrp2 {
+    animation: bounceGrp2 1s ease-in-out 0.2s infinite alternate;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+0%{
+    transform: translateX(-100px);
+    display: none ;        
+}
+10%{
+    transform: translateX(100px);
+    display: block ;        
+}
+20%{
+    transform: translateX(200px);
+    display: block ;        
+}
+30%{
+    transform: translateX(300px);
+    display: block ;        
+}
+40%{
+    transform: translateX(400px);
+    display: block ;        
+}
+50%{
+    transform: translateX(500px);
+    display: block ;        
+}
+60%{
+    transform: translateX(600px);
+    display: block ;        
+}
+70%{
+    transform: translateX(700px);
+    display: block ;        
+}
+80%{
+    transform: translateX(800px);
+    display: block ;        
+}
+90%{
+    transform: translateX(900px);
+    display: block ;        
+}
+100%{
+    transform: translateX(1000px);
+    display: block ;        
+} */
