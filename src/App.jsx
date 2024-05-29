@@ -10,7 +10,6 @@ import left_ribbon from './assets/left_ribbon.png'
 import right_ribbon from './assets/right_ribbon.png'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
